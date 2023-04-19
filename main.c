@@ -1,8 +1,8 @@
-
 // Import header file
 #include "main.h"
 
-int main (int argc, char **argv){
+int main (int argc, char **argv)
+{
 	char *prompt = "(shell) $ ";
 	char *lineptr;
 	size_t n = 0;
@@ -16,5 +16,3 @@ int main (int argc, char **argv){
 	free(lineptr);
 	return (0);
 }
-
-
