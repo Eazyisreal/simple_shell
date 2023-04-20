@@ -1,16 +1,18 @@
 #include "main.h"
+#define MAX_LINE_LENGTH 0
 
 int token_counter(char *token);
 
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *command = NULL;
 	char *delim = " ";
 	char *token;
 	int i, token_count = 0;
-	size_t n = 10;
+	size_t n = MAX_LINE_LENGTH;
 	pid_t pid;
 	ssize_t num_of_char;
+	(void) argc, (void) argv;
 
 	while (1)
 	{
@@ -26,18 +28,18 @@ int main(int agrc, char *argv[])
 
 		i = 1;
 
-		while(token)
+		while (token)
 		{
 			token_count = token_counter(token);
 			switch (token_count)
 			{
-				case 'A':
+				case 1:
+					printf("Token %d: %s \n", i++, token);
 					break;
 				default:
-					printf("%s: No such file or directory", token);
+					printf("%s: No such file or directory\n", token);
 			}
-			printf("Token %d: %s", i++, token);
-			token = strtok(NULL, delim); 
+			token = strtok(NULL, delim);
 		}
 
 		pid = fork();
@@ -66,7 +68,9 @@ int token_counter(char *token)
 
 	while (token[i] != '\0')
 	{
-		count = count + token[i - 0];
+		count++;
+		i++;
 	}
 	return (count);
 }
+
