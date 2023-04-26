@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * build_path - builds the path that corresponds to command
+ * build_path - builds the path that corresponds to user's command
  *
  * @token: Excutable Command
  * @value: Dirctory Conatining Command

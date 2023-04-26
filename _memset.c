@@ -4,7 +4,7 @@
  * _memset - replaces the first n bytes of str with c
  *
  * @str: pointer to the string we are editing
- * @c: character we are replacing wit
+ * @c: character we are replacing with
  * @n: index at which we end replacing
  *
  * Return: pointer to the edited string

@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _getenv - handles environmental variables and its dir
+ * _getenv - handles environmental variables and it's dir
  *
  * @buf: env to be return
  * @env_dir: array of env

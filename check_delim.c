@@ -3,7 +3,7 @@
 /**
  * check_delim - checks for a delimeter match
  *
- * @c: Character To Check
+ * @c: Character being Checked
  * @str: String To Check
  *
  * Return: 1 Succes, 0 Failed

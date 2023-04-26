@@ -5,7 +5,7 @@
  *
  * @str: string whose length is to be calculated
  *
- * Return: length of the string
+ * Return: total length of the string
  */
 
 int get_arr_len(char **str)

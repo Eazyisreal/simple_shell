@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _atoi - converst a character to an integer
+ * _atoi - converts a character to an integer
  *
  * @str: pointer to the character
  *

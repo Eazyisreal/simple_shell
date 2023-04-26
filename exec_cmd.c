@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * execute_cmd - executes command by first creating a child process
+ * execute_cmd - executes command by creating a child process
  *
  * @cmd: command bein executed
  * @argv: holds an array of arguments
