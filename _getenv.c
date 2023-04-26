@@ -2,8 +2,10 @@
 
 /**
  * _getenv - handles environmental variables and its dir
- * @target: env to be return
- * @environ: array of env
+ *
+ * @buf: env to be return
+ * @env_dir: array of env
+ *
  * Return: env and values on Success, NULL on Failure
  */
 
@@ -21,6 +23,6 @@ char *_getenv(char *buf, char **env_dir)
 		}
 		i++;
 	}
-	
+
 	return (NULL);
 }
