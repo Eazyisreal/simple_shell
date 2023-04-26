@@ -10,7 +10,7 @@
  * Return: int
  */
 
-int exit_arg(char **cmd, char **argv, char *buffer)
+int exit_arg222(char **cmd, char **argv, char *buffer)
 {
 	int status = _atoi(cmd[1]);
 

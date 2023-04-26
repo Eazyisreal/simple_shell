@@ -40,7 +40,7 @@ int REPL(char *buf, size_t buf_len, char **cmd, char **argv, char **env)
 			continue;
 		if (_strcmp(cmd[0], "exit") == 0 && get_arr_len(cmd) == 2)
 		{
-			exit_arg(cmd, argv, buf);
+			exit_arg(cmd);
 		}
 
 		execute_cmd(cmd, argv, env);
