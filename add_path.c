@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * add_path - adds the corresponding path to user command entered
+ * add_path - adds the corresponding path to user entered command
  *
  * @cmd: user entered command
  * @env: holds an array of env
